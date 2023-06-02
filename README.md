@@ -9,4 +9,6 @@ Pour l'application
 
 Pour la BDD
 
-1)
+1)télécharger le fichier
+2)l'importer via pgadmin4
+3)vérifier que le nom de la base correspond à celui dans le properties de l'application
