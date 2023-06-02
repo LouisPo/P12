@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Dictionnaire simple du code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+  <header>
+    <div class="header_top_part">
+      <div th:insert="menu.html"></div>
+    </div>
+    <div class="header_bottom_part">
+      <h1>LA PRESENTATION DES PAGES</h1>
+    </div>
+  </header>
+  <div class="row" id="blocPageDicoList">
+
+
+    <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+      <h3>Voilà un sujet simple et compliqué à la fois, commençons déjà par comprendre ce qu'est une page HTML</h3>
+      <div>Le Hypertext Markup Language ou HTML pour les intimes est en réalité un language de programmation qui utilise des balises pour afficher des informations sur une page. Il existe environ une centaine de balise utilisable par le html, ne vous inquiéter pas, vous n'aurez pas à toutes les apprendrent, en vérité seul une dizaine sont utilisé quotidiennement.</div>
+      <div>Pour vous donnez un ordre d'idée à quoi ressemble une page HTML voici un petit exemple d'une page simple.</div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/html.png"></div>
+      <div>On peut y voir les fameuses balises html à mettre en début ET fin de page, toutes balises doit être fermé quand elle est ouverte en rajoutant / dans la balise fermente.la balise head contient diverse information telle que la version de codage, le plus souvent UTF-8, le lien vers le css dont nous parlerons juste après. La balise title elle contient le titre écrit dans l'onglet de la page ici mon site web. Le body lui, tout ce qui s'affichera dans la page, ici ce sera une balise h1 changeant la police de caractère et la balise p représentant un paragraphe.</div>
+      <h2>Voyons maintenant le css</h2>
+      <div>Bien que moins important que le HTML car inutilisable sans ce dernier, il n'en reste ps moins indispensable pour une chose essentielle, la mise en page. En effet le CSS ou Cascading Style Sheets permet de modifier l'intégralité de la mise en page d'une application. Rappeler vous de notre exemple précédent, le css nous permettrait de modifier les caractéristiques des balises pour par exemple changer la taille, la couleur ou encore la position d'une image ou d'un texte. Pour vous donner une image, le html serait un gâteau nature simple et triste à regarder, et le css la garniture attirant l'œil et vous donnant envie de le manger à pleine dent.</div>
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div th:insert="footer.html"></div>
+  </footer>
+</div>
+</body>
+</html>

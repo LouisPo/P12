@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Dictionnaire simple du code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+  <header>
+    <div class="header_top_part">
+      <div th:insert="menu.html"></div>
+    </div>
+    <div class="header_bottom_part">
+      <h1>LA PREMIERE APPLICATION</h1>
+    </div>
+  </header>
+  <div class="row" id="blocPageDicoList">
+
+
+    <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+
+-->
+      <h3>Il est enfin de temps de nous lancer dans la programmation, commençons avec les classes</h3>
+      <div>En java, les classes sont des "modèles" qui permettent de créer des objets.</div>
+      <div>Prenons un exemple connu, vous voulez créer une voiture, pour cela vous aurez besoin de sa marque, son modèle, sa date de fabrication, ces informations sont appellé les variables de la classe. Cela donne une représentation de cette forme.</br></div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/classe.png"></div>
+      <h3><div>Notre classe prête, utilisons là en parlant des constructeurs</div></h3>
+      <div>Comme leur nom l'indique, ils permettent tous simplement de créer un objet via les variables que nous leur avons données. Pour poursuivre l'exemple de la voiture, voilà ce que cela donnerai</div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/constructeur.png"></div>
+      <h3>Passons maintenant à ce qui va passer une grande partie de votre temps de programmation: les conditions</h3>
+      <div>Un sujet bien vague que celui des conditions, c'est pourquoi nous ne parlerons que de quelques une en détails. Commençons avec s'en doute la plus simple: if. </br></div>
+      <div>Comment la décrire? Si telle condition est rempli, fais sa. On l'accompagne souvent de 2 autres conditions qui sont else if et else. Pour mieux illustrer, faisont cela via un programme qui détecte l'âge d'une personne.</div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/condition.png"></div>
+      <div>Dns notre exemple, l'âge est vérifier à 2 moments, dans la partie if (age < 18) et  else if (age < 21), pourquoi? Car la traduction de else est sinon. Donc pour résumer cette exemple, si la personne n'a pas 18 ans, le 1er message s'affiche. Si la personne à plus de 18 ans, on passe au second test pour les 21 ans, si la personne ne les à pas, le 2nd message apparaît, et si aucune condition n'est validé, le dernier message s'affiche. On pourrait quand même ce posait la question: si la personne n'a pas 18 ans, est-ce que le 2nd message ne va pas aussi apparaître? Et bien non, pour la raison qui est que dès qu'une condition est rempli, le programme sort immédiatement des tests, ce qui évite l'apparition de ce genre d'erreur.</div>
+    </div>
+
+  </div>
+  <footer>
+    <div th:insert="footer.html"></div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Dictionnaire simple du code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+  <header>
+    <div class="header_top_part">
+      <div th:insert="menu.html"></div>
+    </div>
+    <div class="header_bottom_part">
+      <h1>L'ORGANISATION DES PROJETS</h1>
+    </div>
+  </header>
+  <div class="row" id="blocPageDicoList">
+
+
+    <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+      <h3>Il est maintenant temps de parler de l'organisation de chaque projet</h3>
+      <div>Vous vous en doutez, les projets ont une structure généralisé qui ons 2 buts: rendre le travail plus facile pour son concepteur, fragmenté un bloc lui permettant d'être plus compréhensible. Rendre son fonctionnement plus simple à une tiers personne qui devrait venir travailler sur ce dernier.</div>
+      <h2><div>C'est pour cela qu'à était créer le MVC</div></h2>
+      <div>MVC, voulant tous simplement dire Model, View et Controller reprennent le principe de fragmenté un projet pour mieux le comprendre mais en lui apportant une nouvelle utilité. En effet, les noms de ces différents n'ont pas été donnée juste pour faire joli.</div>
+      <div>Rentons dans le détail en parlant de chacune de ces parties. La vue d'abord, elle contient tout ce qui va s'afficher sur une page internet, en gros c'est ce que vois l'utilisateur.</div>
+      <div>En second parlons du modèle, son rôle est de contenir et de gérer les informations des applications pour permettre leur bonne utilisation. C'est par exemple ici que sont stocké nos construteurs et nos objets</div>
+      <div>Et pour finir, le contrôleur. Son rôle est on ne peut plus simple, il est de transmettre les informations du modèle à la vue. Par exemple quand vous cliquez sur un bouton, la vue và envoyé un message au contrôleur lui demandait les information lié à ce bouton. Ce dernier va transmettre la demande au modèle qui va renvoyé les informations au contrôleur qui finira par les envoyés à la vue permettant d'afficher les informations du bouton telle qu'un changement de page ou le dépliement d'un menu.</div>
+      <div>en Image, ça donnerait ceci.</div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/MVC.png"></div>
+    </div>
+
+
+  </div>
+  <footer>
+    <div th:insert="footer.html"></div>
+  </footer>
+</div>
+</body>
+</html>

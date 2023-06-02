@@ -1,0 +1,56 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Le Dictionnaire simple du code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="bloc_page">
+		<header>
+			<div class="header_top_part">
+				<div th:insert="menu.html"></div>
+			</div>
+			<div class="header_bottom_part">
+				<h1>MON COMPTE</h1>
+			</div>
+		</header>
+
+
+		<div class="d-flex flex-column align-items-center"
+			id="blocPageMonCompte">
+
+			<div class="p-2 border" id="MonCompteInfos">
+				<h2>Mes informations générales</h2>
+				<div>
+					PRENOM : <a th:text="${currentDicoUser.firstName}"></a>
+				</div>
+				<div>
+					NOM : <a th:text="${currentDicoUser.lastName}"></a>
+				</div>
+				<div>
+					ADRESSE : <a th:text="${currentDicoUser.address}"></a>
+				</div>
+				<div>
+					TELEPHONE : <a th:text="${currentDicoUser.phone}"></a>
+				</div>
+				<div>
+					EMAIL : <a th:text="${currentDicoUser.email}"></a>
+				</div>
+
+				<div>
+					<a class="btn btn-warning" th:href="@{modifierMonCompte}">Modifier mes
+						informations</a>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<footer>
+			<div th:insert="footer.html"></div>
+		</footer>
+	</div>
+</body>
+</html>

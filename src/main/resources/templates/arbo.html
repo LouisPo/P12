@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Dictionnaire simple du code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+  <header>
+    <div class="header_top_part">
+      <div th:insert="menu.html"></div>
+    </div>
+    <div class="header_bottom_part">
+      <h1>L'ARBORESCENCE</h1>
+    </div>
+  </header>
+  <div class="row" id="blocPageDicoList">
+
+
+    <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+-->
+      <h3>Passons à quelque chose d'un peu moins compliqué mais tout aussi essentiel, parlons maintenant arborescence</h3>
+      <div>Pour commencer, il faut savoir qu'on ne peut pas programmer sur n'importe quoi, il faut pour cela utiliser un outil qui pourra interprêter les commandes qu'on lui donne et les transmettre à l'ordinateur qui les exécutera.</div>
+      <div>Commençons d'abord par son utilité, encore une fois, c'est une question de practicité, elle permet encore une fois de mieux organiser les projets et surtout d'aider à plus facilement accéder aux données du projet.</div>
+      <div>Prenons un exemple, nous cherchons à appeler une image dans une page, grâce à l'arborescence, nous savons que cette dernière à été rangé dans le dossier image, tout ce que nous avons à faire est d'indiquer l'endroit de la racine(c'est-à-dire la base du projet) jusqu'à cette image, cela nous donnera ce que l'on appelle un chemin, aussi utile pour appeler des images que d'autres pages du site.</div>
+      <div>Pour les plus curieux, voici un exemple d'arborescence</div>
+      <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/arborescence.png"></div>
+      <div>Et pour ce voulant aller plus loin, si vous voulez par exemple accéder au fichier index.html, le chemin vous permettant de l'appeler ressemblera à ceci(nous partons de la racine): tp1/doc/index.html</div>
+    </div>
+
+
+
+
+  </div>
+  <footer>
+    <div th:insert="footer.html"></div>
+  </footer>
+</div>
+</body>
+</html>

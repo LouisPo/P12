@@ -1,0 +1,45 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Le Dictionnaire simple du code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="bloc_page">
+		<header>
+			<div class="header_top_part">
+				<div th:insert="menu.html"></div>
+			</div>
+			<div class="header_bottom_part">
+				<h1>LES BASES DE LA PROGRAMMATION</h1>
+			</div>
+		</header>
+		<div class="row" id="blocPageDicoList">
+
+
+			<div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+				<h3>Comme pour toutes activités, apprendre les bases est un bon moyen de comprendre les compétences que l'on cherche à assimiler.</h3>
+				<div>De ce fait, savoir pourquoi, comment, et pour qui est un bon point de départ pour commencer à apprendre.</div>
+				<div>Répondons d'abord à ces 3 interrogations avant d'aller plus loin:</br></div>
+				<h2><div>Pourquoi apprendre à coder?</br></div></h2>
+				<div>Pour certains, le code peut ce limiter à une simple passion, une nouvelle technologie dont on voudrait comprendre le fonctionnement. Pour d'autres cela deviendrait un véritable intérêt amenant à des activités professionels.</br></div>
+				<div>Car la programmation(ou le développement) est un tous en constent évolution, qui permet dans le monde d'aujourd'hui, de faire tous ce que l'on souhaite grâce à un ordinateur, du simple message envoyé par mail au site internet donnant des informations en ligne.</br></div>
+				<div>Si on voulais donner une raison concise, cela serait: la curiosité.</div>
+			<h2><div>Ensuite comment?</br></div></h2>
+				<div>Pour ça, je vous renvoie aux autres pages de ce site qui vous apprendrons plus en détails comment faire via des exemples et des démonstrations.</div>
+				<h2><div>Et enfin, pour qui?</div></h2>
+				<div>La réponse peut paraître simple: pour tous le monde. Notre évolution technologique ce base sur des languages de programmations(vous en verrez certains exemples plus tard) nombreux et complexes, savoir ne serai-ce que lire un bout de ce qui peut paraître une langue étrangére peut permettre une comprehension même infime de son fonctionnement, apportant pour certaint un sentiment de satisfaction, pour d'autre d'accomplissement ou encore de motivation ouvrant la voie à de nouvelle passion.</div>
+			<div>Tous cela dis, vous voilà prêt pour commencer votre périple. Accrocher vous à vos clavier, une longue traversée nous attends.</div>
+			</div>
+
+
+		</div>
+		<footer>
+			<div th:insert="footer.html"></div>
+		</footer>
+	</div>
+</body>
+</html>

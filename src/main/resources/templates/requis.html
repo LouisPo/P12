@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Dictionnaire simple du code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+    <header>
+        <div class="header_top_part">
+            <div th:insert="menu.html"></div>
+        </div>
+        <div class="header_bottom_part">
+            <h1>LES PREREQUIS</h1>
+        </div>
+    </header>
+    <div class="row" id="blocPageDicoList">
+
+
+        <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+            <h3>Après cette longue introduction, il est désormais temps de ce lancer dans le dur.</h3>
+            <div>Pour commencer, il faut savoir qu'on ne peut pas programmer sur n'importe quoi, il faut pour cela utiliser un outil qui pourra interprêter les commandes qu'on lui donne et les transmettre à l'ordinateur qui les exécutera.</div>
+            <div>Pour ce faire, nous utiliserons une catégorie de logiciel appeler integrated development environment, ou encore environnement de développement intégré ou peut faire plus simple IDE.</br></div>
+            <h2><div>L'IDE, c'est un outil indispensable.</div></h2>
+            <div>C'est ce dernier qui permettra à l'ordinateur d'exécuter le code que nous aurons créé. Sachez d'avance que les exemples qui serons présenter seront fait sous un IDE nommer IntelIJ. Maintenant que nous avons Notre IDE, passons à la création de notre projet. Pour ce faire je vais vous parler de springboot</div>
+            <h2><div>Qu'est-ce que springboot?</br></div></h2>
+            <div>Pour faire une comparaison, il est aux projets de programmation, ce que les lignes de productions sont aux produits. Il permet de créer une base solide et structuré, facilitant la mise en marche des projets. Il permet de créer une arborescence, les premiers imports ou encore le moyen de lancer notre application.</br></div>
+            </div>
+
+
+
+    </div>
+    <footer>
+        <div th:insert="footer.html"></div>
+    </footer>
+</div>
+</body>
+</html>

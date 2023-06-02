@@ -1,0 +1,76 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Le Dictionnaire simple du code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header_top_part">
+			<div th:insert="menu.html"></div>
+		</div>
+		<div class="header_bottom_part">
+			<h1>MODIFIER LES INFORMATIONS UTILISATEUR</h1>
+		</div>
+	</header>
+	<div class="page_formulaire">
+		<form th:action="@{/modifierMonCompteInfosPerso}" method="post" th:object="${currentDicoUser}">
+
+			<div class="col-md-6 form-group">
+				<label for="firstName">PRENOM</label> <input type="text" th:field="*{firstName}"
+					id="firstName" class="form-control" placeholder="${currentDicoUser.firstName}">
+			</div>
+			<div class="col-md-6 form-group">
+				<label for="lastName">NOM</label> <input type="text" th:field="*{lastName}"
+					id="lastName" class="form-control" placeholder="${currentDicoUser.lastName}">
+			</div>
+			<div class="col-md-6 form-group">
+				<label for="address">ADRESSE</label> <input type="text" th:field="*{address}"
+					id="address" class="form-control" placeholder="${currentDicoUser.address}">
+			</div>
+			<div class="col-md-6 form-group">
+				<label for="phone">TELEPHONE</label> <input type="text" th:field="*{phone}"
+					id="phone" class="form-control" placeholder="${currentDicoUser.phone}">
+			</div>
+			
+			<div class="col-md-6 form-group">
+				<button type="submit" class="btn btn-primary">SAUVEGARDER </button>
+			</div>
+		</form>
+		<form th:action="@{/modifierMonMotDePasse}" method="post"
+			th:object="${currentDicoUser}">
+
+			<div class="col-md-6 form-group">
+				<label for="password">MOT DE PASSE</label> <input type="password" 
+					th:field="*{password}" id="password" class="form-control">
+			</div>
+			<div class="col-md-6 form-group">
+				<button type="submit" class="btn btn-primary">SAUVEGARDER
+					MOT DE PASSE</button>
+			</div>
+		</form>
+
+		<form th:action="@{/modifierMonAdresseEmail}" method="post"
+			th:object="${currentDicoUser}">
+
+			<div class="col-md-6 form-group">
+				<label for="email">EMAIL</label> <input type="text"
+					th:field="*{email}" id="email" class="form-control"
+					placeholder="${currentDicoUser.email}">
+			</div>
+			<div class="col-md-6 form-group">
+				<button
+					onclick="return confirm('attention vous allez être déconnecté. Etes vous sur de vouloir procéder?')"
+					type="submit" class="btn btn-primary">SAUVEGARDER
+					EMAIL</button>
+			</div>
+
+		</form>
+		
+		<footer>
+			<div th:insert="footer.html"></div>
+		</footer>
+	</div>
+</body>
+</html>

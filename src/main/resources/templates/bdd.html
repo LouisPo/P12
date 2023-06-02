@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Dictionnaire simple du code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+    <header>
+        <div class="header_top_part">
+            <div th:insert="menu.html"></div>
+        </div>
+        <div class="header_bottom_part">
+            <h1>LES BASES DE DONNEE</h1>
+        </div>
+    </header>
+    <div class="row" id="blocPageDicoList">
+
+
+        <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+
+            <h3>Parlons enfin des bases de donnée.</h3>
+            <div>Les BDD pour faire plus simple sont comme leur nom l'indique, des endroits de stockage où l'on peut organiser ou récupérer des données. Il existe de très nombreuse base, pour nos exemples nous utiliserons la PGAdmin.</div>
+            <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/pgadmin.png"></div>
+            <div>Ce que l'on voit ici c'est un exemple de base, pour l'instant elle est vide, mais ça va vite changer.</div>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <div th:insert="footer.html"></div>
+    </footer>
+</div>
+</body>
+</html>

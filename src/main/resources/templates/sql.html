@@ -1,0 +1,39 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Dictionnaire simple du code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bloc_page">
+    <header>
+        <div class="header_top_part">
+            <div th:insert="menu.html"></div>
+        </div>
+        <div class="header_bottom_part">
+            <h1>LES LANGUAGES DES BASES DE DONNEE</h1>
+        </div>
+    </header>
+    <div class="row" id="blocPageDicoList">
+
+
+        <div class="col-sm-4 mx-auto" id=descriptionDicoList>
+
+            <h3>Voyons maintenant comment modifier notre base grâce à leur propre langage</h3>
+            <div>Car oui, comme nos autres applications, les bdd ont aussi leur propre manière de se faire comprendre, il existe encore une fois de nombreux languages mais les bdd ont cet avantage d'avoir un langage universel qui se spécialise ensuite en fonction de la base avec laquelle vous voulez communiquer. Ce langage universel que vous verrez se nomme le SQL pour Structured Query Language mais on peut quand même citez quelques variantes telles que le PostgreSQL ou le MySQL. Il est maintenant temps d'un petit exemple, imaginons que nous voulons une base se nommant personne possédant deux tables, c'est-à-dire 2 zones de stockages pour différentes informations.</div>
+            <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/sql.png"></div>
+            <div>Ici, la commande CREATE permet de créer de nouvelles structures que ce soit des bases ou des tables, à savoir que les commandes sont toujours écrites en majuscule. Nous avons désormais un endroit où stocker des données donc autant l'utiliser voyons comment faire.</div>
+            <div class="logo"><img class="mx-auto d-block" src="/imagesAndLogos/images/insert.png"></div>
+            <div>Nous utilisons ici la commande insert pour entrer les informations de notre personne, en précisant bien où, et en rajoutant les '' indiquant que ce que nous rentrons est du texte.</div>
+            <div>Ce n'est ici qu'une des nombreuses possibilités du sql et des bdd, nous vous invitons évidemment à plus vous renseigner si vous êtes intéressé ou juste par curiosité.</div>
+        </div>
+
+
+    </div>
+    <footer>
+        <div th:insert="footer.html"></div>
+    </footer>
+</div>
+</body>
+</html>
